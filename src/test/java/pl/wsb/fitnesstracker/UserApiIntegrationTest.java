@@ -60,7 +60,7 @@ class UserApiIntegrationTest extends IntegrationTestBase {
     void shouldReturnAllSimpleUsers_whenGettingAllUsers() throws Exception {
         User user1 = existingUser(generateUser());
         User user2 = existingUser(generateUser());
-
+///KOMENTARZ
         mockMvc.perform(get("/v1/users/simple").contentType(MediaType.APPLICATION_JSON))
                 .andDo(log())
                 .andExpect(status().isOk())
